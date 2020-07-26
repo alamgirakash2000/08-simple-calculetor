@@ -2,6 +2,7 @@
 const container= document.querySelector('.buttons')
 const show =document.querySelector('#show')
 const clear =document.querySelector('#clear')
+const deleteBtn= document.querySelector('#delete')
 const result= document.querySelector('#result')
 const showResult= document.querySelector('#show-result')
 
@@ -27,3 +28,6 @@ clear.addEventListener('click', e => {
         show.innerText='0'
         showResult.innerText=''
 })
+
+//Functionality of Delete button
+deleteBtn.addEventListener('click', deleteStr)
