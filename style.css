@@ -14,15 +14,20 @@ body{
 }
 
 .container{
-    background: rgb(37, 35, 35);
+    background: rgb(204, 212, 219);
     border: 1px solid white;
+    border-radius: 5px;
     padding: 1rem;
     width: 300px;
     box-shadow: 5px 5px 20px gray;
+    color: black;
+}
+#name{
+    margin-top: 0;
 }
 .screen{
     height:90px;
-    background: darkslategrey;
+    background: rgb(71, 97, 97);
     margin-bottom: 1rem;
     text-align: right;
     border-radius: 4px;
@@ -39,10 +44,12 @@ body{
 }
 
 .btn{
+    background-color: black;
     padding: 1rem;
     border: none;
     border-radius: 3px;
     margin-bottom: 1rem;
+    color: white;
 }
 
 #clear{
