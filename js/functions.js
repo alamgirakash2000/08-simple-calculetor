@@ -16,9 +16,13 @@ function showValue(e){
 
 // Save the operator to the operator array
 function setOperation(e){
-    numbArr.push(parseFloat(getNumber))
-    operatorArr.push(e)
-    getNumber=''
+    if(getNumber!==''){
+        numbArr.push(parseFloat(getNumber))
+    }
+    if(numbArr.length===operatorArr.length+1){
+        operatorArr.push(e)
+         getNumber=''
+    } 
 }
 
 
