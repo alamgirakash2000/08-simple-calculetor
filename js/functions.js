@@ -17,8 +17,12 @@ function showValue(e){
 
 // Save the operator to the operator array
 function setOperation(e){
-    numbArr.push(parseFloat(getNumber))
-    operatorArr.push(e)
+    if(getNumber!==''){
+        numbArr.push(parseFloat(getNumber))
+    }
+    if(!(numbArr.length===operatorArr.length)){
+        operatorArr.push(e)
+    }
     getNumber=''
 }
 
